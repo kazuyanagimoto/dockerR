@@ -1,0 +1,14 @@
+{
+    "name": "${localWorkspaceFolderBasename}",
+    "dockerComposeFile": "../docker-compose.yml",
+    "service": "rstudio",
+    "remoteUser": "rstudio",
+    "extensions": [
+		"ikuyadeu.r"
+	],
+	"forwardPorts": [8787],
+    "workspaceFolder": "/home/rstudio/work",
+    "shutdownAction": "stopCompose",
+    "settings": {
+    }
+}
