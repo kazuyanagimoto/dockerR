@@ -4,7 +4,7 @@
     "service": "rstudio",
     "remoteUser": "rstudio",
     "extensions": [
-		"ikuyadeu.r"
+		"REditorSupport.r"
 	],
 	"forwardPorts": [8787],
     "workspaceFolder": "/home/rstudio/work",
