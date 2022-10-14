@@ -4,7 +4,8 @@
     "service": "rstudio",
     "remoteUser": "rstudio",
     "extensions": [
-		"REditorSupport.r"
+		"REditorSupport.r",
+        "quarto.quarto"
 	],
 	"forwardPorts": [8787],
     "workspaceFolder": "/home/rstudio/work",
