@@ -8,8 +8,5 @@ RUN apt update && apt install -y \
 # R Packages
 RUN R -e "install.packages(c('languageserver', 'renv'))"
 
-# Rstudio Global Options
-COPY --chown=rstudio:rstudio .config/rstudio/rstudio-prefs.json /home/rstudio/.config/rstudio/rstudio-prefs.json
-
 # DVC Path
 ENV PATH $PATH:~/.pip/bin
