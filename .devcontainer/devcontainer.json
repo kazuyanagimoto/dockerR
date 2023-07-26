@@ -5,11 +5,14 @@
     "remoteUser": "rstudio",
     "extensions": [
 		"REditorSupport.r",
-        "quarto.quarto"
+        "quarto.quarto",
+        "znck.grammarly",
+        "julialang.language-julia",
+        "janisdd.vscode-edit-csv",
+        "James-Yu.latex-workshop",
+        "GitHub.copilot"
 	],
-	"forwardPorts": [8787],
+	"forwardPorts": [8080, 8787],
     "workspaceFolder": "/home/rstudio/work",
     "shutdownAction": "stopCompose",
-    "settings": {
-    }
 }

@@ -5,10 +5,22 @@ services:
         environment:
             - TZ=Europe/Madrid
             - DISABLE_AUTH=true
-            - RENV_PATHS_CACHE=/home/rstudio/.renv/cache
             - PYTHONUSERBASE=/home/rstudio/.pip
         volumes:
             - .:/home/rstudio/work
-            - $HOME/.renv:/home/rstudio/.renv/cache
-            - $HOME/.TinyTeX:/home/rstudio/.TinyTeX
-            - $HOME/.pip:/home/rstudio/.pip
+            - renv:/home/rstudio/.cache/R/renv
+            - pip:/home/rstudio/.pip
+            - julia:/home/rstudio/.julia
+            - TinyTeX:/home/rstudio/.TinyTeX
+            - fonts:/usr/share/fonts
+volumes:
+  renv:
+    external: true
+  pip:
+    external: true
+  julia:
+    external: true
+  TinyTeX:
+    external: true
+  fonts:
+    external: true
