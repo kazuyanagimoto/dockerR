@@ -31,3 +31,6 @@ From the command palette (Ctrl+Shift+P), choose "open folder in container"
 1. Set up LaTeX compiling recipe. Do the one of the following:
     - Rename `.vscode/_settings.json` into `.vscode/settings.json` (which is git-ignored)
     - Add the lines in `.vscode/_settings.json` into your `.vscode/settings.json`
+1. Set up Julia environment
+    1. Create an empty file `Project.toml` in the project root directory
+    1. In Julia console, Run `] activate .` and `] instantiate`
