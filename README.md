@@ -8,7 +8,7 @@
     ```{bash}
     docker volume create renv
     docker volume create pip
-    docker volume createe julia
+    docker volume create julia
     docker volume create TinyTeX
     docker volume create fonts
     ```
