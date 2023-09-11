@@ -31,7 +31,7 @@ and the _collaborators_ clone the project and work on it.
 ```{.shell}
 docker volume create renv
 docker volume create pip
-docker volume createe julia
+docker volume create julia
 docker volume create TinyTeX
 docker volume create fonts
 ```
