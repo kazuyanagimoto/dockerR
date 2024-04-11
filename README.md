@@ -11,9 +11,7 @@
 - Install [VSCode](https://code.visualstudio.com/) and [Remote-Containers Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 - Create [Docker volumes](https://docs.docker.com/storage/volumes/) by running
     ```{bash}
-    docker volume create renv
-    docker volume create pip
-    docker volume create julia
+    docker volume create cache
     docker volume create TinyTeX
     docker volume create fonts
     ```
@@ -29,9 +27,7 @@ and the _collaborators_ clone the project and work on it.
 0. Create Docker Volumes. (Only for the first time using this template)
 
 ```{.shell}
-docker volume create renv
-docker volume create pip
-docker volume create julia
+docker volume create cache
 docker volume create TinyTeX
 docker volume create fonts
 ```
